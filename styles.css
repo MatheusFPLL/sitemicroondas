@@ -1,0 +1,545 @@
+﻿/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Cores */
+:root {
+    --azul-claro: #3E77B6;
+    --azul-escuro: #263238;
+    --cinza: #666666;
+    --branco: #ffffff;
+}
+
+/* Container padrão */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--azul-escuro);
+    padding: 20px 0;
+}
+
+header h1 {
+    color: var(--branco);
+    display: inline-block;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--azul-claro);
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #263238; /* Azul escuro */
+    color: #ffffff;
+    padding: 60px 20px;
+}
+
+.container-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.text-content .logo {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.btn-whatsapp,
+.btn-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+.btn-phone {
+    background-color: #F35B04;
+}
+
+.btn-phone:hover {
+    background-color: #e65000;
+}
+
+.image-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sobre */
+.sobre {
+    padding: 60px 0;
+    background-color: var(--branco);
+}
+
+.sobre h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--azul-escuro);
+}
+
+/* Serviços */
+.servicos {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.servicos h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--azul-escuro);
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--branco);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--azul-claro);
+}
+
+.card p {
+    color: var(--cinza);
+}
+
+/* Contato */
+.contato {
+    padding: 60px 0;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--azul-escuro);
+}
+
+.info-contato {
+    text-align: center;
+}
+
+.info-contato p {
+    margin-bottom: 10px;
+}
+
+.info-contato a {
+    color: var(--azul-claro);
+    text-decoration: none;
+}
+
+.info-contato a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Seção Informações */
+.info-atendimento {
+    background-color: #ffffff;
+    padding: 60px 20px;
+}
+
+.container-info {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info-card {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.info-card img {
+    width: 50px;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    color: #F35B04;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #666666;
+    font-size: 1rem;
+}
+
+
+/* Seção Buscamos e Levamos */
+.busca-servico {
+    background-color: #263238; /* Azul escuro */
+    color: #ffffff;
+    padding: 60px 20px;
+}
+
+.container-busca {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.busca-img {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.busca-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.busca-texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.busca-texto h2 {
+    color: #F35B04;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.busca-texto h2 span {
+    font-size: 1.5rem;
+    color: #F35B04;
+}
+
+.busca-texto p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.busca-texto ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.busca-texto ul li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+.especialistas {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.especialistas h2 {
+    color: #F35B04;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 10); /* 5 logos duplicados */
+    animation: scroll 30s linear infinite;
+}
+
+.slide {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.slide img {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    filter: grayscale(0);
+    transition: transform 0.3s;
+}
+
+.slide img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 5)); }
+}
+
+.diferenciais {
+    background-color: #f35b04;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.diferencial-item {
+    flex: 1 1 200px;
+    max-width: 220px;
+    margin: 10px;
+}
+
+.diferencial-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.diferencial-item p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* FAQ */
+.faq {
+    background-color: #e0e0e0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.faq h2 {
+    color: #f35b04;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.faq-item {
+    margin: 10px auto;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    color: #f35b04;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    font-weight: bold;
+}
+
+.faq-question::after {
+    content: "▼";
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question::after {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 20px;
+    background-color: #f9f9f9;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    padding: 15px 20px;
+}
+
+.faq-answer p {
+    margin: 0;
+    text-align: left;
+    color: #333;
+}
+
+/* Botão WhatsApp fixo */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+
+.image-content .swiper {
+  width: 100%;
+}
+
+.image-content .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-content .swiper-slide img {
+  width: 100%;
+  object-fit: contain;
+}
