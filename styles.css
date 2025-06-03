@@ -77,7 +77,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 120px;
 }
 
 .text-content {
@@ -133,7 +133,7 @@ nav ul li a:hover {
 }
 
 .btn-phone:hover {
-    background-color: #e65000;
+    background-color: #F35B04;
 }
 
 .image-content {
@@ -229,13 +229,91 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Rodapé */
+/*rodapé*/
+
 footer {
-    background-color: var(--azul-escuro);
-    color: var(--branco);
-    text-align: center;
-    padding: 20px 0;
+    background-color: #263238;
+    color: #fff;
+    padding: 20px 10px;
+    font-family: 'Segoe UI', sans-serif;
 }
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-col {
+    flex: 1 1 250px;
+    min-width: 200px;
+}
+
+.footer-col h4 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #ddd;
+}
+
+.footer-col p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #bbb;
+    line-height: 1.4;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-col a:hover {
+    color: #8A2BE2;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #2c3e46;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #ccc;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.social-button img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+.social-button:hover {
+    transform: scale(1.05);
+    background-color: #3a4f59;
+    color: #8A2BE2;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    padding-top: 10px;
+}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
@@ -318,7 +396,8 @@ footer {
 
 .busca-img img {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-left: -70px;
 }
 
 .busca-texto {
@@ -434,8 +513,7 @@ footer {
 }
 
 .diferencial-item img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
     margin-bottom: 15px;
 }
 
@@ -529,17 +607,11 @@ footer {
     transform: scale(1.1);
 }
 
-.image-content .swiper {
-  width: 100%;
-}
-
-.image-content .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-content .swiper-slide img {
-  width: 100%;
-  object-fit: contain;
+.image-content {
+    width: 100%;
+    display: flex;
+    Justify-content: center;
+    align-items: center;
+    width: 100%;
+    object-fit: contain;
 }
